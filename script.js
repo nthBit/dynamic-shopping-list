@@ -32,7 +32,11 @@ btn.addEventListener('click', (event) => {
     // appends the newly created list item to the list
     uList.appendChild(listItem);
 
+    // deletes a list item if the delete button is clicked
+    newBtn.addEventListener('click', () => {
+        listItem.remove();
+    });
+
     // focus the input field for the next input
     document.getElementById('item').focus();
 });
-
